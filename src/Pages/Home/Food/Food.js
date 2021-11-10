@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Button } from 'react-bootstrap';
+import { Col} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Food.css'
 
@@ -13,7 +13,9 @@ const Food = (props) => {
                 </Link>
                 <div className="price-rating mt-1">
                     <p className="name">{name}</p>
-                    <button  className="button rounded-circle "><p className="plus ">+</p> </button>
+                    <Link to={`/details/${_id}`}>
+                    <button   className="button rounded-circle "><p className="plus ">+</p> </button>
+                    </Link>
                 </div>
 
 

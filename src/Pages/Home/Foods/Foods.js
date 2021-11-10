@@ -2,6 +2,8 @@ import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { Container, Row, Spinner } from 'react-bootstrap';
+import useCart from '../../../Hooks/useCart';
+import { addToDb, getStoredCart } from '../../../Utilities/FakeDb';
 import Food from '../Food/Food';
 import './Foods.css'
 const Foods = () => {
@@ -9,6 +11,7 @@ const Foods = () => {
     const [displayFoods, setDisplayFoods] = useState([]);
     const [pageCount, setPageCount] = useState(0)
     const [page, setPage] = useState(0)
+    const {cart,setCart}=useCart()
     const size = 9
 
     useEffect(() => {
@@ -22,6 +25,7 @@ const Foods = () => {
                 setPageCount(pageNumber)
             })
     }, [page])
+ 
     return (
         <Container fluid className="mt-3">
             <div className="">
@@ -32,6 +36,7 @@ const Foods = () => {
                             displayFoods.map(food => <Food
                                 key={food.name}
                                 food={food}
+                                
                             ></Food>)
                         }
                     </Row>

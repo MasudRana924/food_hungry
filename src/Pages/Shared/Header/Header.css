@@ -26,3 +26,17 @@
     height:30px;
    
 }
+.cart-button{
+    border:#00C642 ;
+    background-color: #fff;
+}
+.cart-item{
+    position:absolute;
+    margin-top: -17px;
+    margin-left: -30px;
+    text-decoration: none;
+     font-weight: 700;
+     color: black ;
+     
+   
+}
