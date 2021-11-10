@@ -1,0 +1,28 @@
+.info{
+    background-color:gainsboro;
+}
+.info-text{
+    font-size: 14px;
+   text-align: center;
+}
+.navbar{
+    background-color: #fff;
+}
+.link{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+.search{
+    text-align: center;
+    outline-style: none;
+    border:1px solid white;
+    border-bottom:1px solid gold;
+}
+.icon{
+    font-weight:bolder;
+}
+.button{
+    height:30px;
+   
+}
